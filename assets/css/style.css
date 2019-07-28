@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-  font-family: 'Clicker Script', cursive;
+  font-family: "Clicker Script", cursive;
   font-size: 40px;
   line-height: 33px;
 }
@@ -32,7 +32,8 @@ body {
   position: relative;
 }
 
-li, a {
+li,
+a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -40,11 +41,10 @@ li, a {
   text-decoration: none;
 }
 
-li, a:hover{
+li,
+a:hover {
   color: rgb(228, 42, 73);
 }
-
-
 
 header {
   display: flex;
@@ -67,10 +67,21 @@ header {
   padding-top: 50px;
 }
 
-.about-container, .gallery-container, .cakes-container, .contact-container {
+.about-container,
+.gallery-container,
+.cakes-container-dessert,
+.cakes-container-decorated,
+.contact-container {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+}
+
+.cakes-container-decorated {
+  /* align-content: center; */
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .me-image {
@@ -82,11 +93,16 @@ header {
   border: solid 5px pink;
 }
 
-.item-left, .item-right {
-  width: 400px;
-  align-items: center;
+.item-left-decorated,
+.item-right-decorated {
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.item-left-dessert,
+.item-right-dessert {
+  width: 400px;
+}
 
 .about-text {
   width: 500px;
@@ -103,7 +119,7 @@ h1 {
   font-size: 37px;
   padding-bottom: 20px;
   padding-top: 20px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: #e9508a;
 }
 
@@ -138,10 +154,10 @@ h2 {
 /* Decorated Cakes */
 
 .cakes-title {
-  padding-bottom: 0;
+  padding-bottom: 3px;
 }
 
-.cakes-price  {
+.cakes-price {
   padding-top: 0;
   padding-bottom: 0;
 }
