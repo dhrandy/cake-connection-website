@@ -116,6 +116,7 @@ header {
 /* .gallery-container, */
 .cakes-container-dessert,
 .cakes-container-decorated,
+.cakes-container-cheesecake,
 .contact-container {
   display: flex;
   justify-content: center;
@@ -141,6 +142,15 @@ header {
 .item-right-decorated {
   margin-left: auto;
   margin-right: auto;
+}
+
+.item-left-cheesecake {
+  margin-left: auto;
+  width: 250px;
+}
+.item-right-cheesecake {
+  margin-right: auto;
+  width: 125px;
 }
 
 .item-left-dessert,
@@ -215,7 +225,7 @@ h2 {
 /* Position the image container (needed to position the left and right arrows) */
 .gallery-container {
   position: relative;
-  width: 50%;
+  width: 800px;;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 50px;
@@ -301,4 +311,11 @@ h2 {
 
 img {
   vertical-align: middle;
+}
+
+Footer {
+  height: 50px;
+  background-color: #eb4081;
+  color: white;
+  line-height: 46px;
 }
