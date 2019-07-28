@@ -319,3 +319,53 @@ Footer {
   color: white;
   line-height: 46px;
 }
+
+/* Contact */
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #666260;
+  background: #fff;
+  padding: 1em;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 0;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+.submit {
+  border: none;
+  -webkit-appearance: none;
+  background: #ec82aa;
+  color: white;
+}
+
+.container-form {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit {
+  width: 90px !important;
+  margin: 10px !important;
+}
