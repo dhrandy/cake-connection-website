@@ -36,7 +36,7 @@ li, a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: pink;
+  color: rgb(253, 163, 178);
   text-decoration: none;
 }
 
@@ -70,7 +70,7 @@ header {
 .about-container, .gallery-container, .cakes-container, .contact-container {
   display: flex;
   justify-content: center;
-  /* width: 800px; */
+  padding-bottom: 50px;
 }
 
 .me-image {
@@ -78,8 +78,15 @@ header {
 }
 
 .me {
-  border-radius: 50%
+  border-radius: 15px 50px;
+  border: solid 5px pink;
 }
+
+.item-left, .item-right {
+  width: 400px;
+  align-items: center;
+}
+
 
 .about-text {
   width: 500px;
@@ -95,6 +102,56 @@ header {
 h1 {
   font-size: 37px;
   padding-bottom: 20px;
+  padding-top: 20px;
   font-family: 'Dancing Script', cursive;
+  color: #e9508a;
 }
 
+/* Dessert Cakes */
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #e9508a;
+}
+.cakes-title {
+  font-weight: bold;
+  padding-bottom: 3px;
+  text-decoration: underline;
+}
+
+.cakes-description {
+  padding-top: 0;
+}
+
+.cake-links {
+  padding: 20px;
+}
+
+.cake-links-p {
+  padding-bottom: 20px;
+}
+
+.cake-active {
+  color: #e9508a;
+}
+
+/* Decorated Cakes */
+
+.cakes-title {
+  padding-bottom: 0;
+}
+
+.cakes-price  {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cakes-serving-size {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+/* .item-left, .item-right {
+  margin-right: auto;
+  margin-left: auto;
+} */
