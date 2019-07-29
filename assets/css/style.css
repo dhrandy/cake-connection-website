@@ -369,3 +369,18 @@ fieldset {
   width: 90px !important;
   margin: 10px !important;
 }
+
+.story-container {
+  width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 50px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h3 {
+  padding-left: 10px;
+}
