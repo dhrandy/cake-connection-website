@@ -1,5 +1,6 @@
+/* Defaults */
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +14,7 @@ body {
 }
 
 /* Logo */
-.logo {
+/* .logo {
   font-family: "Clicker Script", cursive;
   font-size: 40px;
   line-height: 33px;
@@ -21,7 +22,7 @@ body {
 
 .connection {
   padding-left: 50px;
-}
+} */
 
 /* Header image */
 .hero-image {
@@ -31,64 +32,145 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  font-family: Helvetica, Arial ,sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-weight: bold;
-  font-size: 30px;
-  color: white;
+  font-size: 5em;
+  /* line-height: 15px; */
   padding: 30px;
+  color: white;
 }
 
 .hero-image-shrink {
   height: 50vh;
 }
 
+.hero-text-top, .hero-text-bottom {
+position: absolute;
+text-shadow: 0px 1px 0 #000;
+}
+
+.hero-text-top {
+  top: 10%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text-bottom {
+  top: 18%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+}
+
 header {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 10%; */
   background: white;
 }
 
 
 /* Navbar */
+
+/* Logo */
+.logo {
+  font-family: "Clicker Script", cursive;
+  display: inline-block;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 33px;
+}
+
+.connection {
+  padding-left: 50px;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 125px;
+    align-items: center;
+    /* background: lightgrey; */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgb(255, 117, 170);
+  }
+}
+
+/* Navbar */
 li,
 a,
 .dropdown {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: rgb(253, 163, 178);
   text-decoration: none;
 }
 
-li:hover,
-a:hover,
-.dropdown:hover,
-.dropbtn {
-  color: rgb(228, 42, 73);
-}
-
-.nav-links {
-  list-style: none;
-}
-
-.nav-links li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-/* Dropdown Menu for navbar */
-.dropdown {
-  /* overflow: hidden; */
-  display: inline-block;
-  padding: 0;
-}
-
-.dropdown .dropbtn {
-  border: none;
-  outline: none;
-  color: white;
+.nav-link-sub {
+  color: rgb(0, 0, 0);
 }
 
 .dropdown-content {
@@ -96,9 +178,8 @@ a:hover,
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(24, 16, 16, 0.2);
   z-index: 1;
-  /* transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; */
 }
 
 .dropdown-content a {
@@ -110,12 +191,27 @@ a:hover,
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(255, 117, 117);
+  background-color: rgb(255, 117, 170);
   color: white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Dropdown menu location for screens under 768px */
+@media screen and (max-width: 768px) {
+  .dropdown-content {
+    top: 20%;
+    left: 42%;
+  }
+}
+
+/* Logo under 1000px screen */
+@media screen and (max-width: 1000px) {
+  .logo {
+    font-size: 20px;
+  }
 }
 
 /* About Section */
@@ -301,7 +397,7 @@ h2 {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #eb4081;
+  background-color: rgb(253, 112, 166);
   padding: 2px 16px;
   color: white;
 }
@@ -334,7 +430,7 @@ img {
 
 Footer {
   height: 50px;
-  background-color: #eb4081;
+  background-color: rgb(253, 112, 166);
   color: white;
   line-height: 46px;
 }
