@@ -563,6 +563,11 @@ h3 {
     display: none;
 }
 
+.contact-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 
 /* No greater than 900px, no less than 400px */
 
