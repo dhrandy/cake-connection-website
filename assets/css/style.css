@@ -102,6 +102,14 @@ header {
     color: rgba(0, 0, 0, 0.7);
 }
 
+.nav-links {
+    line-height: 27px;
+}
+
+.fa-facebook {
+    color: pink;
+}
+
 .main-nav li {
     text-align: center;
     margin: 15px auto;
@@ -140,6 +148,10 @@ header {
     }
     .nav-links {
         margin-left: 40px;
+    }
+    .fa-facebook {
+        margin-left: 20px;
+        font-size: 25px;
     }
     .logo {
         margin-top: 0;
@@ -197,11 +209,16 @@ a,
 }
 
 .icons {
+    background: url("../imgs/button-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
-    padding-bottom: 30px;
-    background: pink;
+    padding-bottom: 60px;
+    /* border-top: black solid 5px; */
+    /* background: rgba(255, 192, 203, 0.397); */
 }
 
 .icon-index {
@@ -212,8 +229,10 @@ a,
     margin-right: 20px;
     margin-left: 20px;
     width: 100px;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+}
+
+.fa-facebook {
+    font-size: 25px;
 }
 
 
@@ -565,6 +584,43 @@ h3 {
     padding-bottom: 30px;
 }
 
+.icons button,
+.icons .button {
+    background-color: pink;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.icons .button1 {
+    background-color: white;
+    color: rgb(253, 112, 166);
+    border: 2px solid rgb(253, 112, 166);
+    border-radius: 10px;
+    ;
+}
+
+.icons .button1:hover {
+    background-color: rgb(253, 112, 166);
+    color: white;
+}
+
+.icons h2 {
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-size: 37px;
+}
+
 
 /* No greater than 900px, no less than 400px */
 
@@ -579,7 +635,7 @@ h3 {
         padding: 0;
         padding-left: 5px;
         font-size: 0.8em;
-        line-height: 44px;
+        line-height: 50px;
     }
     .hero-text-top {
         padding-top: 20px;
