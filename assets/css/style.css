@@ -559,6 +559,10 @@ h3 {
     padding-left: 10px;
 }
 
+.hide-desktop {
+    display: none;
+}
+
 
 /* No greater than 900px, no less than 400px */
 
@@ -666,5 +670,11 @@ h3 {
     footer {
         line-height: 24px;
         font-size: 12px;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .hide-desktop {
+        display: unset;
     }
 }
