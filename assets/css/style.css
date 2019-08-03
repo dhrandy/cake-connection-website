@@ -16,25 +16,6 @@ body {
 }
 
 
-/* hr {
-  border: 1px rgb(255, 158, 174);
-} */
-
-
-/* Logo */
-
-
-/* .logo {
-  font-family: "Clicker Script", cursive;
-  font-size: 40px;
-  line-height: 33px;
-}
-
-.connection {
-  padding-left: 50px;
-} */
-
-
 /* Header image */
 
 .hero-image {
@@ -215,6 +196,26 @@ a,
     display: block;
 }
 
+.icons {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: pink;
+}
+
+.icon-index {
+    background: white;
+    border-radius: 50%;
+    border: #e9508a 5px solid;
+    padding: 9px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+
 
 /* Logo under 1000px screen */
 
@@ -226,10 +227,6 @@ a,
 
 
 /* About Section */
-
-#about {
-    padding-top: 50px;
-}
 
 .about-container,
 .cakes-container-dessert,
@@ -681,5 +678,9 @@ h3 {
     }
     .hide-desktop {
         display: unset;
+    }
+    .icon-index {
+        margin-right: unset;
+        margin-left: unset;
     }
 }
