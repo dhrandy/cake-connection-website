@@ -63,6 +63,42 @@ header {
     background: white;
 }
 
+.icons-container {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.icons-item {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: pink;
+    height: 450px;
+    position: relative;
+}
+
+.icons-title {
+    font-family: "Clicker Script", cursive;
+    font-size: 30px;
+    color: rgb(221, 66, 125);
+    padding-top: 20px;
+}
+
+.icons-button {
+    position: absolute;
+    bottom: 0;
+    transform: translate(50%);
+    padding-bottom: 20px;
+}
+
+.icons-description {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 /* Navbar */
 
@@ -594,8 +630,8 @@ h3 {
     padding-bottom: 30px;
 }
 
-.icons button,
-.icons .button {
+.icons-item button,
+.icons-item .button {
     background-color: pink;
     /* Green */
     border: none;
@@ -612,7 +648,7 @@ h3 {
     cursor: pointer;
 }
 
-.icons .button1 {
+.icons-item .button1 {
     background-color: white;
     color: rgb(253, 112, 166);
     border: 2px solid rgb(253, 112, 166);
@@ -620,16 +656,17 @@ h3 {
     ;
 }
 
-.icons .button1:hover {
+.icons-item .button1:hover {
     background-color: rgb(253, 112, 166);
     color: white;
 }
 
-.icons h2 {
+
+/* .icons h2 {
     color: white;
     font-family: "Dancing Script", cursive;
     font-size: 37px;
-}
+} */
 
 
 /* No greater than 900px, no less than 400px */
@@ -748,5 +785,12 @@ h3 {
     .icon-index {
         margin-right: unset;
         margin-left: unset;
+    }
+    .icons-container {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .icons-item {
+        margin-bottom: 10px;
     }
 }
