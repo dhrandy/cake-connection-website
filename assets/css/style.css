@@ -792,5 +792,7 @@ h3 {
     }
     .icons-item {
         margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
