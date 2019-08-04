@@ -348,10 +348,15 @@ a,
 }
 
 .about-text {
-    width: 500px;
+    width: 568px;
     padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.about-text-welcome {
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
 }
 
 .center {
@@ -436,7 +441,7 @@ h2 {
 
 .gallery-container {
     position: relative;
-    width: 800px;
+    width: 850px;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 50px;
