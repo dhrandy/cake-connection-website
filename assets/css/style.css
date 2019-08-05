@@ -15,6 +15,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 37px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: "Dancing Script", cursive;
+    color: #e9508a;
+    background: white;
+    vertical-align: middle;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
 
 /* Header image */
 
@@ -274,7 +292,7 @@ a,
 }
 
 
-/* Logo under 1000px screen */
+/* Logo under 770px screen */
 
 @media screen and (max-width: 770px) {
     .logo {
@@ -363,20 +381,21 @@ a,
     text-align: center;
 }
 
-h1 {
-    font-size: 37px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-family: "Dancing Script", cursive;
-    color: #e9508a;
-    background: white;
-    /* border-top: pink solid 1px; */
-    /* border-bottom: pink solid 1px; */
-    vertical-align: middle;
+
+/* For Cake Pages */
+
+.cakes-title {
+    font-weight: bold;
+    padding-bottom: 3px;
+    /* text-decoration: underline; */
+    font-size: 19px;
+    color: #ff6b87;
+    padding-bottom: 3px;
 }
 
-
-/* Dessert Cakes */
+.cakes-description {
+    padding-top: 0;
+}
 
 h2 {
     padding-top: 20px;
@@ -385,17 +404,8 @@ h2 {
     /* background: white; */
 }
 
-.cakes-title {
-    font-weight: bold;
-    padding-bottom: 3px;
-    /* text-decoration: underline; */
-    font-size: 19px;
-    color: #ff6b87;
-}
 
-.cakes-description {
-    padding-top: 0;
-}
+/* Cake Links for the Cake Pages */
 
 .cake-links {
     padding: 20px;
@@ -418,10 +428,6 @@ h2 {
 
 
 /* Decorated Cakes */
-
-.cakes-title {
-    padding-bottom: 3px;
-}
 
 .cakes-price {
     padding-top: 0;
@@ -618,14 +624,6 @@ fieldset {
     padding-bottom: 50px;
 }
 
-.bold {
-    font-weight: bold;
-}
-
-h3 {
-    padding-left: 10px;
-}
-
 .hide-desktop {
     display: none;
 }
@@ -665,13 +663,6 @@ h3 {
     background-color: rgb(253, 112, 166);
     color: white;
 }
-
-
-/* .icons h2 {
-    color: white;
-    font-family: "Dancing Script", cursive;
-    font-size: 37px;
-} */
 
 
 /* No greater than 900px, no less than 400px */
