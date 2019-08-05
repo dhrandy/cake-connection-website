@@ -84,7 +84,7 @@ header {
 .icons-container {
     display: flex;
     justify-content: center;
-    background: #fff7f7;
+    /* background: #fff7f7; */
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -93,7 +93,7 @@ header {
     width: 300px;
     margin-left: 10px;
     margin-right: 10px;
-    background: pink;
+    background: white;
     height: 450px;
     position: relative;
 }
